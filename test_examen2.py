@@ -11,7 +11,8 @@ class TestMiClase(unittest.TestCase):
     def test_ObtieneValencia_caso2(self):
         obj = MiClase(0, 0, 0, [], [])
         resultado = obj.ObtieneValencia(24680)
-        self.assertEqual(resultado, 0)  # no hay dígitos impares
+        # Lo rompemos a propósito: debería ser 0, pero ponemos 1
+        self.assertEqual(resultado, 1)
 
 
 
